@@ -1,0 +1,13 @@
+[MESSAGES CONTROL]
+# fixtures are injected by name (redefined-outer-name), no docstrings in this project
+# logging-fstring-interpolation off on purpose, log messages read better with the values inline
+disable=missing-module-docstring,missing-function-docstring,missing-class-docstring,redefined-outer-name,too-few-public-methods,logging-fstring-interpolation
+
+# tests are step by step with a named variable per step, 15 locals is too tight
+# the assertions take keyword only arguments, one of them is what_proven
+[DESIGN]
+max-locals=20
+max-args=6
+
+[FORMAT]
+max-line-length=88
